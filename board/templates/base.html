@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>IISMA - {% block title %}{% endblock title %}</title>
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> -->
+  <link rel="stylesheet" href="{{url_for('static',filename='dist/css/output.css')}}">
+</head>
+
+<body>
+  <h1 class="text-5xl text-center"><a href="{{ url_for('home.home') }}">IISMA Data</a></h1>
+  {% include("navigation.html") %}
+  <section>
+    <header>
+      {% block header %}{% endblock header %}
+    </header>
+    <main>
+      {% block content %}{% endblock content %}
+      <main>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+
+</html>

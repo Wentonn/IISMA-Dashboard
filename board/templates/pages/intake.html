@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h2 class="text-center text-4xl my-4">{% block title %}Intake{% endblock title %}</h2>
+{% endblock header %}
+
+{% block content %}
+
+<div class="ml-[100px] mb-5 px-5 w-3/4">
+  <p class="font-semibold text-lg">Filter</p>
+  <form method="post" action="{{ url_for('intake.filter') }}">
+    <div class="mb-5">
+      <label for="search_query">University Name </label>
+      <input type="text" id="search_query" name="search_query" class="w-[220px] rounded-xl border-black mr-3">
+
+      {% if session['ept'] == 'All' %}
+      <label for="english_test">English Test</label>
+      <select id="english_test" name="english_test" class='rounded-xl border-black mr-3 w-[132px]'>
+        <option value="" selected>All</option>
+        <option value="ielts">IEL TS</option>
+        <option value="toefl">TOEFL</option>
+        <option value="det">DET</option>
+      </select>
+      {% endif %}
+
+      <label for="region">Region </label>
+      <select id="region" name="region" class="w-[220px] rounded-xl border-black mr-3">
+        <option value="" selected>All</option>
+        {% for region in unique_regions %}
+        <option value="{{ region }}">{{ region }}</option>
+        {% endfor %}
+      </select>
+
+      <label for="year">Intake Year </label>
+      <select id="year" name="year" class="rounded-xl border border-black">
+        <option value="" selected>All</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+
+    </div>
+
+    <div>
+      <label for="type" class="mr-[83px]">Type </label>
+      <select id="type" name="type" class="w-[220px] rounded-xl border-black mr-3">
+        <option value="" selected>All</option>
+        <option value="Awardees">Awardees</option>
+        <option value="Cofunding Awardees">Cofunding Awardees</option>
+        <option value="Applicants">Applicants</option>
+        <option value="Cofunding Applicants">Cofunding Applicants</option>
+      </select>
+
+
+      {% if session['ept'] == 'All' %}
+      <label for="english_test_score">EPT Score</label>
+      {% else %}
+      <label for="english_test_score">{{session['ept']}} Score</label>
+      {%endif%}
+      <input type="text" id="english_test_score" name="english_test_score"
+        class="w-[50px] rounded-xl border-black mr-[6.5px]">
+
+      <label for="gpa">GPA </label>
+      <input type="text" id="gpa" name="gpa" class="w-[50px] rounded-xl border-black mr-3">
+      <button type="submit" id="submit"
+        class="border-black border p-2 rounded-xl bg-gray-100 hover:bg-green-600 hover:text-white">Apply Filter</button>
+    </div>
+  </form>
+
+  <div class='mt-1'>
+    <p class="font-semibold text-lg mb-3">Display EPT</p>
+    <a href="{{ url_for('intake.set_ept', ept='All') }}" class="border-black border p-2 rounded-xl">All</a>
+    <a href="{{ url_for('intake.set_ept', ept='IELTS') }}" class="border-black border p-2 rounded-xl">IELTS</a>
+    <a href="{{ url_for('intake.set_ept', ept='TOEFL') }}" class="border-black border p-2 rounded-xl">TOEFL</a>
+    <a href="{{ url_for('intake.set_ept', ept='DET') }}" class="border-black border p-2 rounded-xl">DET</a>
+  </div>
+</div>
+
+
+<div class="relative mt-5 overflow-x-auto w-[85%] h-[500px] mx-auto mb-[50px]">
+  {% if intakes != [] %}
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 border-black">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 text-center sticky top-0">
+      <tr>
+        <th scope="col" class="px-6 py-3 text-center"></th>
+        <th scope="col" class="px-6 py-3 text-center">University</th>
+        <th scope="col" class="px-6 py-3 text-center">Type</th>
+        <th scope="col" class="px-6 py-3 text-center">Year</th>
+        <th scope="col" class="px-6 py-3">Location</th>
+        <th scope="col" class="px-6 py-3 text-center">Total Students</th>
+        <th scope="col" class="px-6 py-3">Lowest GPA</th>
+        <th scope="col" class="px-6 py-3 text-center">Highest GPA</th>
+        {% if session['ept'] == "All" or session['ept'] == "IELTS"%}
+        <th scope="col" class="px-6 py-3">Lowest IELTS</th>
+        <th scope="col" class="px-6 py-3 text-center">Highest IELTS</th>
+        {% endif %}
+        {% if session['ept'] == "All" or session['ept'] == "TOEFL"%}
+        <th scope="col" class="px-6 py-3">Lowest TOEFL</th>
+        <th scope="col" class="px-6 py-3 text-center">Highest TOEFL</th>
+        {% endif %}
+        {% if session['ept'] == "All" or session['ept'] == "DET"%}
+        <th scope="col" class="px-6 py-3">Lowest DET</th>
+        <th scope="col" class="px-6 py-3 text-center">Highest DET</th>
+        {% endif %}
+      </tr>
+    </thead>
+    <div class="overflow-y-auto">
+      <tbody class="border-2 border-y--black h-[50%]">
+        {% for intake in intakes %}
+        <tr class="border-2 border-t-black">
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center pl-2"><img src="{{ intake["Images"] }}"
+              alt="{{ intake["Uni_Name"] }}" class="h-12 w-12 mr-2 inline-block"></td>
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900  dark:text-white  w-[450px]">{{intake["Uni_Name"]
+            }}</td>
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{ intake["Type_"] }}</td>
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{ intake["Year_"] }}</td>
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{ intake["Location"] }}</td>
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{ intake["Total_Students"] }}</td>
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{ intake["GPA_Min"] |default("-",True)
+            }}</td>
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{ intake["GPA_Max"] |default("-",True)
+            }}</td>
+          {% if session['ept'] == "All" or session['ept'] == "IELTS" %}
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{ intake["IELTS_Score_Min"]
+            |default("-",True) }}
+          </td>
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{ intake["IELTS_Score_Max"]
+            |default("-",True) }}
+          </td>
+          {% endif %}
+          {% if session['ept'] == "All" or session['ept'] == "TOEFL" %}
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{ intake["TOEFL_Score_Min"]
+            |default("-",True) }}
+          </td>
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center ">{{ intake["TOEFL_Score_Max"]
+            |default("-",True) }}
+          </td>
+          {% endif %}
+          {% if session['ept'] == "All" or session['ept'] == "DET" %}
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{
+            intake["Duolingo_English_Test_Score_Min"]
+            |default("-",True) }}</td>
+          <td class="border-b border-gray-200 dark:border-gray-700 text-center">{{
+            intake["Duolingo_English_Test_Score_Max"]
+            |default("-",True) }}</td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </div>
+  </table>
+  {% else %}
+  <h1 class="text-center text-xl font-semibold">There is no university matching your filter</h1>
+  {%endif%}
+</div>
+{% endblock content %}

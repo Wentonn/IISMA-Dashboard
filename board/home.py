@@ -19,6 +19,4 @@ def home():
     GROUP BY Type_,Year_
     ORDER BY Year_"""
     iisma_data = db.execute(query).fetchall()
-    for i in iisma_data:
-        print(i["Type_"])
     return render_template('pages/home.html',iisma_data=iisma_data) 

@@ -19,6 +19,7 @@ This project is divided into 5 steps, Data Scraping, Preprocessing, JSON Creatio
 2. Open the Data Scraping Directory
 3. Open the iisma.ipynb
 4. Run All
+
 **Note : It is probably not runable as the website is currently under maintenance and might have changes when it is done.**
 
 ### SQL

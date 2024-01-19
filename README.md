@@ -15,32 +15,39 @@ This project is divided into 5 steps, Data Scraping, Preprocessing, JSON Creatio
 
 # How to Use the Program
 ### Data Scraping
-1. git clone https://github.com/Wentonn/IISMA-Dashboard
-2. Open the Data Scraping Directory
-3. Open the iisma.ipynb
-4. Run All
+```
+git clone https://github.com/Wentonn/IISMA-Dashboard
+Open the Data Scraping Directory
+Open the iisma.ipynb
+Run All
+```
 
 **Note : It is probably not runable as the website is currently under maintenance and might have changes when it is done.**
 
 ### SQL
-1. git clone https://github.com/Wentonn/IISMA-Dashboard
-2. cd IISMA-Dashboard/"Data Scraping"
-3. psql -U {username} -d {database_name} < iisma.sql
+```
+git clone https://github.com/Wentonn/IISMA-Dashboard
+cd IISMA-Dashboard/"Data Scraping"
+psql -U {username} -d {database_name} < iisma.sql
+```
 
 ### Web App
-1. git clone https://github.com/Wentonn/IISMA-Dashboard
-2. cd IISMA-Dashboard/Web
-3. python -m venv venv
-4. .\venv\Scripts\activate
-5. pip install -r requirements.txt
-6. Create a '.env' file in the Web Folder and Add "FLASK_DATABASE=board.sqlite"
-7. python -m flask --app board init-db
-8. python -m flask --app board run --port 8000 --debug
+```
+git clone https://github.com/Wentonn/IISMA-Dashboard
+cd IISMA-Dashboard/Web
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+Create a '.env' file in the Web Folder and Add "FLASK_DATABASE=board.sqlite"
+python -m flask --app board init-db
+python -m flask --app board run --port 8000 --debug
+```
 
 # JSON Structure 
 From the scraped data, the data is converted into a JSON format,
 IISMA Intake :
- > {
+```json
+{
     "GPA Min": 3.39,
     "GPA Max": 3.96,
     "TOEFL Score Min": null,
@@ -53,24 +60,29 @@ IISMA Intake :
     "Uni Name": "Boston University",
     "Type": "Awardees",
     "Year": "2022"
->  }
+}
+```
 
 IISMA University :
->   {
+```json
+{
     "University": "Boston University",
     "Location": "United States of America",
     "Images": "https://i0.wp.com/iisma.kemdikbud.go.id/info/wp-content/uploads/2022/02/Boston-Univ.png?fit=300%2C300&ssl=1",
     "Region": "America & Canada"
->  }
+}
+```
 
 IISMA Requirements : 
->   {
+```json
+{
     "Uni Name": "Boston University",
     "GPA": 3.0,
     "IELTS": 6.5,
     "TOEFL": 84.0,
     "Duolingo English Test": 110.0
->  }
+}
+```
 
 # Screenshots
 Here are some screenshots from the scraping process.

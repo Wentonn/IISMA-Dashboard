@@ -17,10 +17,10 @@ This project is divided into 5 steps, Data Scraping, Preprocessing, JSON Creatio
 ### Data Scraping
 ```
 git clone https://github.com/Wentonn/IISMA-Dashboard
+```
 Open the Data Scraping Directory
 Open the iisma.ipynb
 Run All
-```
 
 **Note : It is probably not runable as the website is currently under maintenance and might have changes when it is done.**
 
@@ -38,7 +38,9 @@ cd IISMA-Dashboard/Web
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
+```
 Create a '.env' file in the Web Folder and Add "FLASK_DATABASE=board.sqlite"
+```
 python -m flask --app board init-db
 python -m flask --app board run --port 8000 --debug
 ```

@@ -45,11 +45,15 @@ python -m flask --app board run --port 8000 --debug
 
 ### How to Use Website
 #### Home Page : 
+![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/home_page.png)
 On the home page we have,
 1. ![#00FF00](https://placehold.co/15x15/00FF00/00FF00.png) `Navigation Buttons(Requirements and Intakes)`
 2. ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `IISMA Statistics`
 
 #### Requirement Page : 
+![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/requirement_page.png)
+![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/req_filters.jpg)
+**Applied Filter**
 On the requirement page we have,
 1. ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) `Filters for searching the universities`
 2. ![#00FF00](https://placehold.co/15x15/00FF00/00FF00.png) `Requirement Table`
@@ -57,6 +61,11 @@ On the requirement page we have,
 **To filter using EPT Score you must choose the EPT Type**
 
 #### Intake Page : 
+![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/intake_page.png)
+![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/intake_filter.jpg)
+**Applied Filter + EPT Toggle DET**
+![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/intake_ept_filter.jpg)
+**Applied EPT Toggle DET**
 On the intake page we have,
 1. ![#00FF00](https://placehold.co/15x15/00FF00/00FF00.png) `Filters for searching universities`
 2. ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) `Display EPT Toggle`

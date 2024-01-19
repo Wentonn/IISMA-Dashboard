@@ -38,7 +38,7 @@ cd IISMA-Dashboard/Web
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
-echo "FLASK_DATABASE=board.sqlite" > .env
+echo FLASK_DATABASE=board.sqlite > .env    
 python -m flask --app board init-db
 python -m flask --app board run --port 8000 --debug
 ```

@@ -1,0 +1,534 @@
+[
+  {
+    "Uni Name": "Boston University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 84.0,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "Arizona State University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 79.0,
+    "Duolingo English Test": 115.0
+  },
+  {
+    "Uni Name": "The University of Pennsylvania",
+    "GPA": 3.3,
+    "IELTS": 7.0,
+    "TOEFL": 100.0,
+    "Duolingo English Test": 120.0
+  },
+  {
+    "Uni Name": "Yale University",
+    "GPA": 3.0,
+    "IELTS": 7.0,
+    "TOEFL": 100.0,
+    "Duolingo English Test": 120.0
+  },
+  {
+    "Uni Name": "Penn State University",
+    "GPA": 3.3,
+    "IELTS": 6.5,
+    "TOEFL": 80.0,
+    "Duolingo English Test": 120.0
+  },
+  {
+    "Uni Name": "University of California, Davis",
+    "GPA": 3.0,
+    "IELTS": 7.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": 105.0
+  },
+  {
+    "Uni Name": "UC Chile",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Michigan State University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 79.0,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "University of Colorado Boulder",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 120.0
+  },
+  {
+    "Uni Name": "University of British Columbia",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 125.0
+  },
+  {
+    "Uni Name": "University of Waterloo",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 120.0
+  },
+  {
+    "Uni Name": "Western University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 83.0,
+    "Duolingo English Test": 115.0
+  },
+  {
+    "Uni Name": "The University of Chicago",
+    "GPA": 3.5,
+    "IELTS": 7.0,
+    "TOEFL": 104.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Texas at Austin",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 78.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Osaka University",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "Singapore Management University",
+    "GPA": 3.0,
+    "IELTS": 7.0,
+    "TOEFL": 93.0,
+    "Duolingo English Test": 125.0
+  },
+  {
+    "Uni Name": "Hanyang University (Seoul Campus)",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "National Taiwan University of Science and Technology (Taiwan Tech)",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Korea University",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Universiti Malaya",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Universiti Kebangsaan Malaysia",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 79.0,
+    "Duolingo English Test": 105.0
+  },
+  {
+    "Uni Name": "Universiti Sains Malaysia",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 79.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Nanyang Technological University",
+    "GPA": 3.3,
+    "IELTS": 6.0,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 125.0
+  },
+  {
+    "Uni Name": "Keio University",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "National Taiwan University",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Chulalongkorn University",
+    "GPA": 3.25,
+    "IELTS": 6.5,
+    "TOEFL": 80.0,
+    "Duolingo English Test": 105.0
+  },
+  {
+    "Uni Name": "Middle East Technical University",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 79.0,
+    "Duolingo English Test": 92.0
+  },
+  {
+    "Uni Name": "The Australian National University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 80.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "The University of Adelaide",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 79.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "The University of Queensland",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 87.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Sydney",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 85.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Auckland",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Melbourne",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 79.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Monash University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 79.0,
+    "Duolingo English Test": 125.0
+  },
+  {
+    "Uni Name": "The University of Western Australia",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 82.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Otago",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Victoria University of Wellington",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "University of New South Wales",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Canterbury",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Vrije Universiteit Amsterdam",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 92.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Leiden University",
+    "GPA": 3.2,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Twente",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Maastricht University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 105.0
+  },
+  {
+    "Uni Name": "KU Leuven",
+    "GPA": 3.3,
+    "IELTS": 6.5,
+    "TOEFL": 92.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Tartu",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "University of Szeged",
+    "GPA": 3.2,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "University of Pisa",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Humboldt-Universit\u00e4t zu Berlin",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 105.0
+  },
+  {
+    "Uni Name": "University of Zagreb",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "University of Warsaw",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Grenoble Ecole de Management",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "M.V.Lomonosov Moscow State University",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Radboud University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Vytautas Magnus University",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 87.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Sciences Po",
+    "GPA": 3.6,
+    "IELTS": 6.5,
+    "TOEFL": 100.0,
+    "Duolingo English Test": 135.0
+  },
+  {
+    "Uni Name": "Universitat Pompeu Fabra",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": 115.0
+  },
+  {
+    "Uni Name": "Sapienza University of Rome",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "University of Padua",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Universidad Aut\u00f3noma de Madrid",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Palack\u00fd University Olomouc",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 78.0,
+    "Duolingo English Test": 100.0
+  },
+  {
+    "Uni Name": "Lancaster University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 87.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Leicester",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "University of Galway",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 88.0,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "University of Birmingham",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 88.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Newcastle University",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 120.0
+  },
+  {
+    "Uni Name": "University of Edinburgh",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 92.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University College Dublin",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 120.0
+  },
+  {
+    "Uni Name": "University College Cork - National University of Ireland",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 90.0,
+    "Duolingo English Test": 120.0
+  },
+  {
+    "Uni Name": "University of Glasgow",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Liverpool",
+    "GPA": 3.0,
+    "IELTS": 7.0,
+    "TOEFL": 100.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of Leeds",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": null,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "University of Sussex",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 80.0,
+    "Duolingo English Test": 105.0
+  },
+  {
+    "Uni Name": "University of Warwick",
+    "GPA": 3.0,
+    "IELTS": 6.0,
+    "TOEFL": 87.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "University of York",
+    "GPA": 3.0,
+    "IELTS": 6.5,
+    "TOEFL": 87.0,
+    "Duolingo English Test": 110.0
+  },
+  {
+    "Uni Name": "University College London",
+    "GPA": 3.3,
+    "IELTS": 7.0,
+    "TOEFL": 96.0,
+    "Duolingo English Test": null
+  },
+  {
+    "Uni Name": "Queen Mary University of London",
+    "GPA": 3.0,
+    "IELTS": 7.0,
+    "TOEFL": 100.0,
+    "Duolingo English Test": null
+  }
+]

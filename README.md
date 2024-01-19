@@ -73,6 +73,6 @@ IISMA Requirements :
 
 # Screenshots
 Here are some screenshots from the scraping process.
-![alt text]([[https://github.com/Wentonn/Seleksi-2023-Tugas-1/blob/main/Data%20Scraping/screenshot/player_bio.jpg](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/intake_table.jpg)](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/intake_table.jpg))
-![alt text]([[https://github.com/Wentonn/Seleksi-2023-Tugas-1/blob/main/Data%20Scraping/screenshot/player_bio.jpg](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/intake_table.jpg)](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/requirements_table.jpg))
-![alt text]([[https://github.com/Wentonn/Seleksi-2023-Tugas-1/blob/main/Data%20Scraping/screenshot/player_bio.jpg](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/intake_table.jpg)](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/university_table.jpg))
+![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/intake_table.jpg)
+![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/requirements_table.jpg)
+![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/university_table.jpg)

@@ -24,7 +24,7 @@ Note : It is probably not runable as the website is currently under maintenance 
 ### SQL
 1. git clone https://github.com/Wentonn/IISMA-Dashboard
 2. cd IISMA-Dashboard/"Data Scraping"
-3. pgdump -U {username} -d {database_name} < iisma.sql
+3. psql -U {username} -d {database_name} < iisma.sql
 
 ### Web App
 1. git clone https://github.com/Wentonn/IISMA-Dashboard

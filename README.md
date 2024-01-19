@@ -129,7 +129,7 @@ IISMA Requirements :
 }
 ```
 
-# Screenshots
+# Scraping Screenshots
 Here are some screenshots from the scraping process.
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/intake_table.jpg)
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Data%20Scraping/pandas/requirements_table.jpg)

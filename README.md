@@ -56,6 +56,7 @@ On the home page we have,
 <h3 align="center">
 Applied Filter
 </h3>
+
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/req_filters.jpg)
 
 On the requirement page we have,
@@ -70,11 +71,13 @@ On the requirement page we have,
 <h3 align="center">
 Applied Filter + EPT Toggle DET
 </h3>
+
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/intake_filter.jpg)
 
 <h3 align="center">
 Applied EPT Toggle DET
 </h3>
+
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/intake_ept_filter.jpg)
 
 

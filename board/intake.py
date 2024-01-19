@@ -57,13 +57,13 @@ def filter():
         query += f" AND Uni_Name LIKE '%{filters['name']}%'"
 
     if filters['type'] != "":
-        query += f" AND Type_ = '{filters["type"]}'"
+        query += f" AND Type_ = '{filters['type']}'"
 
     if filters['gpa']:
-        query += f" AND GPA_Min < {float(filters["gpa"])}"
+        query += f" AND GPA_Min < {float(filters['gpa'])}"
 
     if filters['year'] != "":
-        query += f" AND YEAR_ = {int(filters["year"])}"
+        query += f" AND YEAR_ = {int(filters['year'])}"
 
     
     if (filters["ept_type"] != "" or session['ept'] != "All") and filters['ept_score']:

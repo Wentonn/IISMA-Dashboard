@@ -54,7 +54,9 @@ On the home page we have,
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/requirement_page.png)
 
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/req_filters.jpg)
+<p align="center">
 **Applied Filter**
+</p>
 
 On the requirement page we have,
 1. ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) `Filters for searching the universities`
@@ -66,10 +68,14 @@ On the requirement page we have,
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/intake_page.png)
 
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/intake_filter.jpg)
+<p align="center">
 **Applied Filter + EPT Toggle DET**
+</p>
 
 ![alt text](https://github.com/Wentonn/IISMA-Dashboard/blob/main/Web/Screenshots/intake_ept_filter.jpg)
+<p align="center">
 **Applied EPT Toggle DET**
+</p>
 
 On the intake page we have,
 1. ![#00FF00](https://placehold.co/15x15/00FF00/00FF00.png) `Filters for searching universities`

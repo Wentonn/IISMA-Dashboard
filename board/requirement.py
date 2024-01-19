@@ -57,7 +57,7 @@ def filter():
             query += f" AND DET IS NOT NULL AND DET < '{int(filters['ept_score'])}'"
     
     if filters['gpa']:
-        query += f" AND GPA < {float(filters["gpa"])}"
+        query += f" AND GPA < {float(filters['gpa'])}"
     
     if filters['accept_det'] != "":
         if filters['accept_det'] == 'det-only':

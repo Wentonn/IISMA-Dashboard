@@ -46,19 +46,19 @@ python -m flask --app board run --port 8000 --debug
 ### How to Use Website
 #### Home Page : 
 On the home page we have,
-1. ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `Navigation Buttons(Requirements and Intakes)`
+1. ![#00FF00](https://placehold.co/15x15/00FF00/00FF00.png) `Navigation Buttons(Requirements and Intakes)`
 2. ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `IISMA Statistics`
 
 #### Requirement Page : 
 On the requirement page we have,
 1. ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) `Filters for searching the universities`
-2. ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `Requirement Table`
+2. ![#00FF00](https://placehold.co/15x15/00FF00/00FF00.png) `Requirement Table`
 
 **To filter using EPT Score you must choose the EPT Type**
 
 #### Intake Page : 
 On the intake page we have,
-1. ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `Filters for searching universities`
+1. ![#00FF00](https://placehold.co/15x15/00FF00/00FF00.png) `Filters for searching universities`
 2. ![#FFFF00](https://placehold.co/15x15/FFFF00/FFFF00.png) `Display EPT Toggle`
 3. ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `Intake Table`
 

@@ -15,6 +15,9 @@ This project is divided into 5 steps, Data Scraping, Preprocessing, JSON Creatio
 
 # How to Use the Program
 ### Data Scraping
+
+**Run in Terminal / Command Prompt**
+
 ```
 git clone https://github.com/Wentonn/IISMA-Dashboard
 ```
@@ -25,6 +28,9 @@ Run All
 **Note : It is probably not runable as the website is currently under maintenance and might have changes when it is done.**
 
 ### SQL
+
+**Run in Terminal / Command Prompt**
+
 ```
 git clone https://github.com/Wentonn/IISMA-Dashboard
 cd IISMA-Dashboard/"Data Scraping"
@@ -32,6 +38,9 @@ psql -U {username} -d {database_name} < iisma.sql
 ```
 
 ### Web App
+
+**Run in Terminal / Command Prompt**
+
 ```
 git clone https://github.com/Wentonn/IISMA-Dashboard
 cd IISMA-Dashboard/Web
@@ -41,6 +50,11 @@ pip install -r requirements.txt
 echo FLASK_DATABASE=board.sqlite > .env    
 python -m flask --app board init-db
 python -m flask --app board run --port 8000 --debug
+```
+
+**Open in Web Browser**
+```
+127.0.0.1/8000
 ```
 
 ### How to Use Website

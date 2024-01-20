@@ -68,11 +68,11 @@ def filter():
     
     if (filters["ept_type"] != "" or session['ept'] != "All") and filters['ept_score']:
         if filters['ept_type'] == "ielts" or session['ept']  == "IELTS" :
-            query += f" AND IELTS_Score_Min IS NOT NULL AND IELTS_Score_Min < {float(filters['ept_score'])}"
+            query += f" AND IELTS_Score_Min IS NOT NULL AND IELTS_Score_Min <= {float(filters['ept_score'])}"
         elif filters['ept_type'] == "toefl" or session['ept']  == "TOEFL":
-            query += f" AND TOEFL_Score_Min IS NOT NULL AND TOEFL_Score_Min < {float(filters['ept_score'])}"
+            query += f" AND TOEFL_Score_Min IS NOT NULL AND TOEFL_Score_Min <= {float(filters['ept_score'])}"
         elif filters['ept_type'] == "det" or session['ept']  == "DET":
-            query += f" AND Duolingo_English_Test_Score_Min IS NOT NULL AND Duolingo_English_Test_Score_Min < '{int(filters['ept_score'])}' AND EXISTS (SELECT 1 FROM requirement r WHERE r.Uni_Name = i.Uni_Name AND r.DET IS NOT NULL"
+            query += f" AND Duolingo_English_Test_Score_Min IS NOT NULL AND Duolingo_English_Test_Score_Min <= '{int(filters['ept_score'])}' AND EXISTS (SELECT 1 FROM requirement r WHERE r.Uni_Name = i.Uni_Name AND r.DET IS NOT NULL"
 
     if filters['regions']:
         query += f" AND Region = '{filters['regions']}'"

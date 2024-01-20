@@ -50,11 +50,11 @@ def filter():
     
     if (filters["ept_type"] != "") and filters['ept_score']:
         if filters['ept_type'] == "ielts":
-            query += f" AND IELTS IS NOT NULL AND IELTS < {float(filters['ept_score'])}"
+            query += f" AND IELTS IS NOT NULL AND IELTS <= {float(filters['ept_score'])}"
         elif filters['ept_type'] == "toefl":
-            query += f" AND TOEFL IS NOT NULL AND TOEFL < {float(filters['ept_score'])}"
+            query += f" AND TOEFL IS NOT NULL AND TOEFL <= {float(filters['ept_score'])}"
         elif filters['ept_type'] == "det":
-            query += f" AND DET IS NOT NULL AND DET < '{int(filters['ept_score'])}'"
+            query += f" AND DET IS NOT NULL AND DET <= '{int(filters['ept_score'])}'"
     
     if filters['gpa']:
         query += f" AND GPA < {float(filters['gpa'])}"

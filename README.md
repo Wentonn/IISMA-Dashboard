@@ -14,6 +14,26 @@ This project is divided into 5 steps, Data Scraping, Preprocessing, JSON Creatio
 5. The website is then created using Flask and SQLite as the database.
 
 # How to Use the Program
+### Web App
+
+**Run in Terminal / Command Prompt**
+
+```
+git clone https://github.com/Wentonn/IISMA-Dashboard
+cd IISMA-Dashboard/Web
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+echo FLASK_DATABASE=board.sqlite > .env    
+python -m flask --app board init-db
+python -m flask --app board run --port 8000 --debug
+```
+
+**Open in Web Browser**
+```
+127.0.0.1/8000
+```
+
 ### Data Scraping
 
 **Run in Terminal / Command Prompt**
@@ -35,26 +55,6 @@ Run All
 git clone https://github.com/Wentonn/IISMA-Dashboard
 cd IISMA-Dashboard/"Data Scraping"
 psql -U {username} -d {database_name} < iisma.sql
-```
-
-### Web App
-
-**Run in Terminal / Command Prompt**
-
-```
-git clone https://github.com/Wentonn/IISMA-Dashboard
-cd IISMA-Dashboard/Web
-python -m venv venv
-.\venv\Scripts\activate
-pip install -r requirements.txt
-echo FLASK_DATABASE=board.sqlite > .env    
-python -m flask --app board init-db
-python -m flask --app board run --port 8000 --debug
-```
-
-**Open in Web Browser**
-```
-127.0.0.1/8000
 ```
 
 ### How to Use Website

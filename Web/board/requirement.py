@@ -13,13 +13,24 @@ bp = Blueprint("requirement", __name__)
 def requirement():
     db = get_db()
     requirements = db.execute(
-        """SELECT Uni_Name,Location, GPA, IELTS, TOEFL, DET,Images
+        """SELECT Uni_Name,Location, GPA, IELTS, TOEFL, DET,Images, Period
         FROM requirement r, University u
         WHERE u.University = r.Uni_Name 
         """
     ).fetchall()
+
+    courses_query = """SELECT University, Course FROM course"""
+    courses = db.execute(courses_query).fetchall()
+
+    university_courses = {}
+    for course in courses:
+        university_name = course["University"]
+        if university_name not in university_courses:
+            university_courses[university_name] = []
+        university_courses[university_name].append(course["Course"])
+
     unique_regions = [row[0] for row in db.execute("SELECT DISTINCT Region FROM university").fetchall()]
-    return render_template("pages/requirement.html",requirements=requirements,unique_regions=unique_regions)
+    return render_template("pages/requirement.html",requirements=requirements,unique_regions=unique_regions, university_courses=university_courses)
 
 @bp.route('/requirement/filter',methods=['POST'])
 def filter():
@@ -32,16 +43,26 @@ def filter():
     filters['ept_score'] = request.form.get('english_test_score')
     filters['accept_det'] = request.form.get('accept_det')
 
-    query = """SELECT Uni_Name,Location, GPA, IELTS, TOEFL, DET,Images
+    query = """SELECT Uni_Name,Location, GPA, IELTS, TOEFL, DET,Images, Period
         FROM requirement r, University u
         WHERE u.University = r.Uni_Name 
         """
     
-    check = """SELECT Uni_Name,Location, GPA, IELTS, TOEFL, DET,Images
+    check = """SELECT Uni_Name,Location, GPA, IELTS, TOEFL, DET,Images, Period
         FROM requirement r, University u
         WHERE u.University = r.Uni_Name 
         """
     
+    courses_query = """SELECT University, Course FROM course"""
+    courses = db.execute(courses_query).fetchall()
+
+    university_courses = {}
+    for course in courses:
+        university_name = course["University"]
+        if university_name not in university_courses:
+            university_courses[university_name] = []
+        university_courses[university_name].append(course["Course"])
+
     if filters['name']:    
         query += f" AND Uni_Name LIKE '%{filters['name']}%'"
     
@@ -68,6 +89,6 @@ def filter():
     if query != check:
         unique_regions = [row[0] for row in db.execute("SELECT DISTINCT Region FROM university").fetchall()]
         requirements = db.execute(query).fetchall()
-        return render_template("pages/requirement.html",requirements=requirements,filters=filters,unique_regions=unique_regions)
+        return render_template("pages/requirement.html",requirements=requirements,filters=filters,unique_regions=unique_regions, university_courses=university_courses)
     else:
         return requirement()

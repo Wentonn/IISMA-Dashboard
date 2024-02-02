@@ -724,8 +724,8 @@
     "Duolingo English Test Score Max": null,
     "Total Students": 3,
     "Uni Name": "Prince of Songkla University",
-    "Type": null,
-    "Year": null
+    "Type": "Awardees",
+    "Year": "2022"
   },
   {
     "GPA Min": 3.49,
@@ -1452,8 +1452,8 @@
     "Duolingo English Test Score Max": null,
     "Total Students": 19,
     "Uni Name": "University of Groningen",
-    "Type": null,
-    "Year": null
+    "Type": "Awardees",
+    "Year": "2022"
   },
   {
     "GPA Min": 3.37,
@@ -1466,8 +1466,8 @@
     "Duolingo English Test Score Max": 155.0,
     "Total Students": 46,
     "Uni Name": "University of P\u00e9cs",
-    "Type": null,
-    "Year": null
+    "Type": "Awardees",
+    "Year": "2022"
   },
   {
     "GPA Min": 3.25,
@@ -1480,8 +1480,8 @@
     "Duolingo English Test Score Max": 145.0,
     "Total Students": 25,
     "Uni Name": "University of Granada",
-    "Type": null,
-    "Year": null
+    "Type": "Awardees",
+    "Year": "2022"
   },
   {
     "GPA Min": 3.02,
@@ -2740,8 +2740,8 @@
     "Duolingo English Test Score Max": "125",
     "Total Students": 14,
     "Uni Name": "Prince of Songkla University",
-    "Type": null,
-    "Year": null
+    "Type": "Applicants",
+    "Year": "2022"
   },
   {
     "GPA Min": 3.12,
@@ -3482,8 +3482,8 @@
     "Duolingo English Test Score Max": 110.0,
     "Total Students": 32,
     "Uni Name": "University of Groningen",
-    "Type": null,
-    "Year": null
+    "Type": "Applicants",
+    "Year": "2022"
   },
   {
     "GPA Min": 3.08,
@@ -3496,8 +3496,8 @@
     "Duolingo English Test Score Max": 155.0,
     "Total Students": 662,
     "Uni Name": "University of P\u00e9cs",
-    "Type": null,
-    "Year": null
+    "Type": "Applicants",
+    "Year": "2022"
   },
   {
     "GPA Min": 3.0,
@@ -3510,8 +3510,8 @@
     "Duolingo English Test Score Max": 145.0,
     "Total Students": 470,
     "Uni Name": "University of Granada",
-    "Type": null,
-    "Year": null
+    "Type": "Applicants",
+    "Year": "2022"
   },
   {
     "GPA Min": 3.02,
